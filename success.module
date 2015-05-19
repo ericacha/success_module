@@ -1,0 +1,21 @@
+
+<?php
+
+function success_menu() {
+    $items['success_page'] = array(
+        'title'=> 'Login Success!',
+        'page callback' => 'message_function',
+        'access callback' => TRUE,
+        'type' => MENU_CALLBACK,
+
+    );
+    return $items;
+
+}
+    function message_function() {
+        return "<p> Success! You're logged in!</p>";
+    }
+
+    function success_user_insert() {
+        $_GET['destination'] = 'success_page';
+    }

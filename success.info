@@ -1,0 +1,5 @@
+name = Success
+description = Display success message when new user created.
+package = Abeer & Erica Package
+core = 7.x
+files[] = success.module
